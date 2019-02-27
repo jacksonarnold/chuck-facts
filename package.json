@@ -1,0 +1,16 @@
+{
+  "name": "chuck-facts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "zip": "zip -r deploy_package.zip AlexaSkill.js index.js package.json",
+    "deploy": "npm run-script zip && node deploy.js && del deploy_package.zip"
+  },
+  "author": "Jackson Arnold",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.411.0"
+  }
+}
